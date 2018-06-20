@@ -22,3 +22,29 @@ Monitor class (Client) uses Java RMI to communicate with the central server beca
 
 
 The measured readings received by the server written to a text file called ‘readings.txt’.
+
+Running the program 
+
+
+1) Running the server
+   Compile the source files using ‘javac *.java’ command.
+   Generate the server stub using the command ‘rmic Server’
+   Start the rmiregistry using the command ‘start rmiregistry’.
+   Run ‘RemoteServer’ Class.
+   
+   
+2) Adding sensors 
+  Run ‘AlarmSensor’ Class.
+  Enter username and password provided in the users.txt file.
+  At a time only one user can log in with the same username and password.
+  
+  
+3) Running the monitor 
+   Run ‘LoginForm’ Class.
+   
+
+4) Authenticating Monitor(Client) 
+  Enter username and password provided in the credentials.txt file. 
+  
+  
+5) Displaying Monitor
