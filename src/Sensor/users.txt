@@ -1,0 +1,4 @@
+sensorAdmin1:test1
+sensorAdmin2:test2
+sensorAdmin3:test3
+
