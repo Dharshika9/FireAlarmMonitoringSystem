@@ -12,7 +12,13 @@ Server will also alert the monitors if any sensor stops responding. Sensors or m
 
 Overview of the implementation
 
- The system is implemented in Java with Java Socket programming and Java RMI.
- The sensor class performs basic socket programming to make the connection with the server through TCP/IP ports to send data readings to the server. This is because the sensor and the server work on two different machines. AlarmSensor Class(client program)creates a socket to connect that socket to the server. When the connection is made the server creates a socket object. The client and server communicate by writing to and reading from the socket.
- Monitor class (Client) uses Java RMI to communicate with the central server because both server & monitor need to perform complex operations. This can be difficult in socket programming. Java RMI allows monitors to remotely call methods on the server.
- The measured readings received by the server written to a text file called ‘readings.txt’.
+The system is implemented in Java with Java Socket programming and Java RMI.
+
+
+The sensor class performs basic socket programming to make the connection with the server through TCP/IP ports to send data readings to the server. This is because the sensor and the server work on two different machines. AlarmSensor Class(client program)creates a socket to connect that socket to the server. When the connection is made the server creates a socket object. The client and server communicate by writing to and reading from the socket.
+ 
+ 
+Monitor class (Client) uses Java RMI to communicate with the central server because both server & monitor need to perform complex operations. This can be difficult in socket programming. Java RMI allows monitors to remotely call methods on the server.
+
+
+The measured readings received by the server written to a text file called ‘readings.txt’.
